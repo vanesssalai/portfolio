@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Rethink Sans
+- Font Author: Copyright 2022 The Rethink Sans Project Authors (https://github.com/hans-thiessen/Rethink-Sans)
+- Font Source: https://fonts.gstatic.com/s/rethinksans/v5/AMODz4SDuXOMCPfdoglY9JQuWHBGG0X45DmqkmFRCE7mma-aua4.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from './components/Header';
-import About from './components/About';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
+import About from './components/AboutMe/AboutMe';
+import Projects from './components/Projects/Projects';
+import Header from './layout/Header/Header'
+import Footer from './layout/Footer/Footer';
 import './App.css'
 
 function App() {
@@ -13,8 +13,8 @@ function App() {
         <main>
             <About />
             <Projects />
-            <Contact />
         </main>
+        <Footer />
     </div>
     )
 }

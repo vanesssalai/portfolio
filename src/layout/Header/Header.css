@@ -2,7 +2,6 @@ header {
     position: sticky;
     top: 0;
     z-index: 50;
-    color: white;
     border-bottom: 1px solid rgb(20, 20, 20);
     padding: 24px;
     margin-left: auto;
@@ -27,12 +26,24 @@ header {
     a {
         cursor: pointer;
         transition: 0.5s;
-        color: white; 
+ 
         text-decoration: none; 
     }
     a:hover {
         font-size: larger;
         text-decoration: underline;
+    }
+
+    .header-about:hover {
+        color: #FF3366;
+    }
+
+    .header-projects:hover {
+        color: #20A4F3;
+    }
+    
+    .header-resume:hover {
+        color: #2EC4B6;
     }
 }
 
@@ -47,7 +58,6 @@ header {
 .animation-text {
     width: 100%;
     display: inline-block;
-    color: white;
     font-size: 20px;
     animation: moveAcross 8s linear;
 }

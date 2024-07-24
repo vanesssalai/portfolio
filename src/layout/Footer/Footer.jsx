@@ -5,10 +5,10 @@ export default function Footer() {
 
     return (
         <footer>
-            <div className=''>
+            <div className='footer-content'>
                 <h3>Connect with me!</h3>
                 <a className='footer-icon'>
-                    <FaLinkedin />
+                    <FaLinkedin  color="#0077B5"/>
                 </a>
             </div>
         </footer>

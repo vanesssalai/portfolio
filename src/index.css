@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
 html, body {
-    background-color: black;
+    background-color: #000000;
     font-family: "Rethink Sans", sans-serif;
+    color: #F6F7F8;
 }

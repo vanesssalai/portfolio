@@ -1,10 +1,5 @@
-import './AboutMe.css';
+import React from "react";
 
-export default function AboutMe() {
+export default function About() {
 
-    return (
-        <div id='about' className="about-container">
-            
-        </div>
-    )
 }

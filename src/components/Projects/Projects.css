@@ -3,13 +3,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .project-item {
     min-height: 80vh;
     min-width: 80vw;
     padding: 36px;
-    margin: 24px;
+    margin: 24px 0;
     border-radius: 40px;
     transform: translateY(20px);
     transition: transform 0.5s ease-out, box-shadow 0.5s ease-out;
@@ -17,7 +18,7 @@
     flex-direction: row;
     gap: 72px;
     align-items: center; 
-    background-color: rgba(246, 247, 248, 0.05);
+    background-color: rgba(246, 247, 248, 0.1);
     position: relative;
     overflow: visible;
 }
@@ -27,10 +28,13 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.image-container {
-    position: relative;
-    width: 600px;
-    height: 400px;
+image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
 }
 
 .image-container {
@@ -74,7 +78,7 @@
 }
 
 .project-item:hover .project-image:nth-child(1) {
-    transform: translateX(40px) translateY(-20px);
+    transform: translateX(32px) translateY(-20px);
     transition-delay: 0s;
 }
 
@@ -85,7 +89,7 @@
 }
 
 .project-item:hover .project-image:nth-child(3) {
-    transform: translateX(-40px) translateY(20px);
+    transform: translateX(-32px) translateY(20px);
     display: block;
     transition-delay: 0.7s;
 }
@@ -96,7 +100,7 @@
 }
 
 .project-information-container {
-    margin-top: 1rem;
+    margin-top: 16px;
 }
 
 .project-information-container h3 {
@@ -105,7 +109,7 @@
 }
 
 .project-information-container p {
-    margin: 0.5rem 0;
+    margin: 8px 0;
 }
 
 .project-information-container a {
@@ -141,4 +145,40 @@
     50% { color: #F6F7F8; }
     75% { color: #20A4F3; }
     100% { color: #FF3366; }
+}
+
+@media screen and (max-width: 768px) {
+    .project-item {
+        flex-direction: column;
+        min-height: auto;
+        min-width: 80vw;
+        padding: 24px;
+    }
+    
+    .image-container {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 24px;
+    }
+
+    .project-image {
+        position: relative;
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+    .project-image:nth-child(2),
+    .project-image:nth-child(3) {
+        display: none;
+    }
+
+    .project-item:hover .project-image:nth-child(1) {
+        transform: none;
+    }
+
+    .project-information-container {
+        width: 100%;
+    }
 }

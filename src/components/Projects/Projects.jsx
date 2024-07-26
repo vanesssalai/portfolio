@@ -1,14 +1,26 @@
 import React, { useEffect, useRef } from "react";
+import { useNavigate } from 'react-router-dom';
+
+import MechHub from '../../assets/MechHub.png';
 import './Projects.css';
 
 export default function Projects() {
+    const navigate = useNavigate();
+
     const projects = [
+        {
+            name: 'MechHub',
+            description: 'MechHub is an e-commerce site for mechanical keyboards',
+            live: 'https://orbital-mechhub.web.app/',
+            image: MechHub,
+        },
         {
             name: 'MechHub',
             description: '',
             live: 'https://orbital-mechhub.web.app/',
-            image: '',
-        }
+            image: MechHub,
+        },
+
     ];
 
     const projectRefs = useRef([]);
@@ -24,6 +36,8 @@ export default function Projects() {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('appear');
+                } else {
+                    entry.target.classList.remove('appear');
                 }
             });
         };
@@ -43,17 +57,20 @@ export default function Projects() {
 
     return (
         <div>
-            <div className="projects">
+            <div className="projects" id="projects">
+                <h1>My Projects</h1>
                 {projects.map((project, index) => (
                     <div 
                         key={index} 
                         ref={el => projectRefs.current[index] = el}
                         className="project-item"
                     >
-                        <img src={project.thumbnail} alt={project.name} />
-                        <h3>{project.name}</h3>
-                        <p>{project.description}</p>
-                        <a href={project.live} target="_blank" rel="noopener noreferrer">View Live</a>
+                        <img src={project.image} alt={project.name} />
+                        <div className="project-information-container">
+                            <h3>{project.name}</h3>
+                            <p>{project.description}</p>
+                            <a href={project.live} target="_blank" rel="noopener noreferrer">View Live</a>
+                        </div>
                     </div>
                 ))}
             </div>

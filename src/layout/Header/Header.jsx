@@ -43,8 +43,8 @@ export default function Header() {
                     <a onClick={toggleAnimation}>Vanessa Lai</a>
                 </div>
                 <div className="header-links">
-                    <a className="header-about">About Me</a>
-                    <a className="header-projects">Projects</a>
+                    <a className="header-about" >About Me</a>
+                    <a className="header-projects" href="#projects">Projects</a>
                     <a className="header-resume">Resume</a>
                 </div>
             </header>

@@ -1,7 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import { useNavigate } from 'react-router-dom';
+import { FaAngleRight } from "react-icons/fa6";
 
-import MechHub from '../../assets/MechHub.png';
+import MechHub_Landing from '../../assets/Images/MechHub/MechHub.png';
+import MechHub_Profile from '../../assets/Images/MechHub/MechHub2.png';
+import MechHub_Forum from '../../assets/Images/MechHub/MechHub3.png';
 import './Projects.css';
 
 export default function Projects() {
@@ -12,19 +15,14 @@ export default function Projects() {
             name: 'MechHub',
             description: 'MechHub is an e-commerce site for mechanical keyboards',
             live: 'https://orbital-mechhub.web.app/',
-            image: MechHub,
+            images: [MechHub_Landing, MechHub_Profile, MechHub_Forum],
+            path: '/mechhub'
         },
-        {
-            name: 'MechHub',
-            description: '',
-            live: 'https://orbital-mechhub.web.app/',
-            image: MechHub,
-        },
-
     ];
 
     const projectRefs = useRef([]);
 
+    // Appear on scroll effect
     useEffect(() => {
         const observerOptions = {
             root: null,
@@ -55,6 +53,11 @@ export default function Projects() {
         };
     }, []);
 
+    const handleClick = (path, event) => {
+        event.stopPropagation();
+        navigate(path);
+    };
+
     return (
         <div>
             <div className="projects" id="projects">
@@ -65,11 +68,18 @@ export default function Projects() {
                         ref={el => projectRefs.current[index] = el}
                         className="project-item"
                     >
-                        <img src={project.image} alt={project.name} />
+                        <div className="image-container">
+                            {project.images.map((image, imgIndex) => (
+                                <img key={imgIndex} src={image} alt={`${project.name}-${imgIndex}`} className="project-image" />
+                            ))}
+                        </div>
                         <div className="project-information-container">
                             <h3>{project.name}</h3>
                             <p>{project.description}</p>
                             <a href={project.live} target="_blank" rel="noopener noreferrer">View Live</a>
+                        </div>
+                        <div className="hidden" onClick={(event) => handleClick(project.path, event)}>
+                            <p>click here for more info <FaAngleRight /> </p>
                         </div>
                     </div>
                 ))}

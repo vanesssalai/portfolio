@@ -3,4 +3,5 @@ html, body {
     background-color: #000000;
     font-family: "Rethink Sans", sans-serif;
     color: #F6F7F8;
+    scroll-behavior: smooth;
 }

@@ -1,0 +1,29 @@
+.about {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+    a {
+        font-size: 10px;
+    }
+}
+
+.about-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        height: 400px;
+    }
+}

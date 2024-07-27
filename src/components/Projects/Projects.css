@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
+    min-height: 100vh;
 }
 
 .project-item {
@@ -18,7 +19,7 @@
     flex-direction: row;
     gap: 72px;
     align-items: center; 
-    background-color: rgba(246, 247, 248, 0.1);
+    background-color: rgba(150, 150, 150, 0.1);
     position: relative;
     overflow: visible;
 }

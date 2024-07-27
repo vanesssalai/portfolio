@@ -28,15 +28,6 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-}
-
 .image-container {
     position: relative;
     width: 600px;
@@ -58,6 +49,7 @@ image-container {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* image animation */
 .project-image:nth-child(1) { 
     z-index: 1; 
 }
@@ -99,17 +91,18 @@ image-container {
     transition: z-index 0s !important;
 }
 
+/* text and information */
 .project-information-container {
     margin-top: 16px;
 }
 
 .project-information-container h3 {
-    margin: 0;
+    margin: 12px 0;
     font-size: 28px;
 }
 
 .project-information-container p {
-    margin: 8px 0;
+    margin: 8px 0 16px 0;
 }
 
 .project-information-container a {
@@ -122,6 +115,8 @@ image-container {
 
 .project-information-container a:hover {
     text-decoration: underline;
+    transition: background-color 0.5s ease-in-out;
+    animation: colorChange 2s linear infinite;
 }
 
 .hidden {
@@ -131,12 +126,17 @@ image-container {
     right: 20px; 
     cursor: pointer;
     font-size: 20px;
+    transition: 0.7s all ease-out;
+}
+
+.hidden:hover {
+    transform: translateY(-6px);
 }
 
 .project-item:hover .hidden {
     display: block;
     transition: color 0.5s ease-in-out;
-    animation: colorChange 2s linear infinite;
+    color: #F6F7F8;
 }
 
 @keyframes colorChange {
@@ -150,9 +150,10 @@ image-container {
 @media screen and (max-width: 768px) {
     .project-item {
         flex-direction: column;
-        min-height: auto;
+        /* min-height: ; */
         min-width: 80vw;
         padding: 24px;
+        gap: 20px;
     }
     
     .image-container {
@@ -162,23 +163,17 @@ image-container {
     }
 
     .project-image {
-        position: relative;
         display: block;
         max-width: 100%;
         max-height: 100%;
         object-fit: contain;
     }
 
-    .project-image:nth-child(2),
-    .project-image:nth-child(3) {
-        display: none;
-    }
-
-    .project-item:hover .project-image:nth-child(1) {
-        transform: none;
-    }
-
     .project-information-container {
         width: 100%;
+    }
+
+    .hidden {
+        font-size: 16px;
     }
 }

@@ -16,7 +16,9 @@ export default function MechHub() {
                     content=''
                 />
                 <div className="mechHub-content">
-                    <p>for </p>
+                    <p>MechHub is a Full-Stack E-Commerce Site for Mechanical Keyboards
+                        I mainly worked on the      
+                    </p>
                 </div>
             </>
         } />

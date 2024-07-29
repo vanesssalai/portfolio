@@ -2,9 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { useNavigate } from 'react-router-dom';
 import { FaArrowRight } from "react-icons/fa";
 
-import MechHub_Landing from '../../assets/Images/MechHub/MechHub.png';
-import MechHub_Profile from '../../assets/Images/MechHub/MechHub2.png';
-import MechHub_Forum from '../../assets/Images/MechHub/MechHub3.png';
+import MechHub from '../../assets/Images/MechHub/MechHub_preview.png';
 import './Projects.css';
 
 export default function Projects() {
@@ -14,7 +12,7 @@ export default function Projects() {
         {
             name: 'MechHub',
             description: 'Full-Stack E-Commerce Site for Mechanical Keyboards',
-            images: [MechHub_Landing, MechHub_Profile, MechHub_Forum],
+            images: [MechHub],
             path: '/mechhub'
         },
     ];
@@ -81,9 +79,7 @@ export default function Projects() {
                                 <img 
                                     key={imgIndex} 
                                     src={image} 
-                                    alt={`${project.name}-${imgIndex}`} 
                                     className="project-image"
-                                    style={{zIndex: 3 - imgIndex}} 
                                 />
                             ))}
                         </div>

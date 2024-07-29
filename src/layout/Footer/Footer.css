@@ -36,6 +36,8 @@ footer {
 }
 
 .footer-icon a {
+    color: #F6F7F8;
+    text-decoration: none;
     transition: 0.5s;
 }
 

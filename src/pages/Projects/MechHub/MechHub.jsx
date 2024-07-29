@@ -16,9 +16,13 @@ export default function MechHub() {
                     content=''
                 />
                 <div className="mechHub-content">
-                    <p>MechHub is a Full-Stack E-Commerce Site for Mechanical Keyboards
-                        I mainly worked on the      
-                    </p>
+                    <p> description coming soon ╭( ๐_๐)╮ </p>
+                    {/* <p>MechHub is a Full-Stack E-Commerce Site for Mechanical Keyboards built for NUS Orbital 2024.
+                    <br />The web application includes features such as chat and forum. I mainly worked on the CRUD system for 
+                        listing, likes and following, the forum system, recommendation system, product search and filter and the seller dashboard.  
+                        For more details on the features and their implementaion, you may view the README in the source code.
+                    <br />The site uses ReactJS and 
+                    </p> */}
                 </div>
             </>
         } />

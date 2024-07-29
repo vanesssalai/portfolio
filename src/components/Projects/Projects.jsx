@@ -54,6 +54,8 @@ export default function Projects() {
 
     const handleClick = (path, event) => {
         event.stopPropagation();
+        // Save current scroll position before navigating
+        sessionStorage.setItem("projectsScrollPosition", window.pageYOffset.toString());
         navigate(path);
     };
 

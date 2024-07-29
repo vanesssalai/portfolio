@@ -52,8 +52,8 @@
 .project-information-container {
     display: flex;
     flex-direction: row;
-    gap: 40px;
     margin: 24px 0;
+    text-align: center;
 }
 
 .project-information-container .project-name {
@@ -61,10 +61,12 @@
     font-weight: 200;
     letter-spacing: 1px;
     margin: 12px 0;
+    width: 30vw;
 }
 
 .project-information-desc, .project-desc {
-    font-size: 24px;
+    text-align: left;
+    font-size: 20px;
     margin: 16px 0 24px 0;
     width: 40vw;
 }
@@ -76,7 +78,7 @@
     text-decoration: none;
     color: #F6F7F8;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 16px;
     transition: transform 0.5s ease, background-color 0.3s ease;
 }
 

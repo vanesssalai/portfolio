@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { useNavigate } from 'react-router-dom';
-import { FaAngleRight } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa";
 
 import MechHub_Landing from '../../assets/Images/MechHub/MechHub.png';
 import MechHub_Profile from '../../assets/Images/MechHub/MechHub2.png';
@@ -13,8 +13,7 @@ export default function Projects() {
     const projects = [
         {
             name: 'MechHub',
-            description: 'MechHub is an e-commerce site for mechanical keyboards',
-            live: 'https://orbital-mechhub.web.app/',
+            description: 'Full-Stack E-Commerce Site for Mechanical Keyboards',
             images: [MechHub_Landing, MechHub_Profile, MechHub_Forum],
             path: '/mechhub'
         },
@@ -68,18 +67,23 @@ export default function Projects() {
                         ref={el => projectRefs.current[index] = el}
                         className="project-item"
                     >
+                        <div className="project-information-container">
+                            <h3 className="project-name">{project.name}</h3>
+                            <div className="project-information-desc">
+                                <p className="project-desc">{project.description}</p>
+                                <a className="view-more-button" onClick={(event) => handleClick(project.path, event)}>View Project <FaArrowRight /></a>
+                            </div>
+                        </div>
                         <div className="image-container">
                             {project.images.map((image, imgIndex) => (
-                                <img key={imgIndex} src={image} alt={`${project.name}-${imgIndex}`} className="project-image" />
+                                <img 
+                                    key={imgIndex} 
+                                    src={image} 
+                                    alt={`${project.name}-${imgIndex}`} 
+                                    className="project-image"
+                                    style={{zIndex: 3 - imgIndex}} 
+                                />
                             ))}
-                        </div>
-                        <div className="project-information-container">
-                            <h3>{project.name}</h3>
-                            <p>{project.description}</p>
-                            <a href={project.live} target="_blank" rel="noopener noreferrer">View Live</a>
-                        </div>
-                        <div className="hidden" onClick={(event) => handleClick(project.path, event)}>
-                            <p>click here for more info <FaAngleRight /> </p>
                         </div>
                     </div>
                 ))}

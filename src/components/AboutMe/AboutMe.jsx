@@ -21,7 +21,7 @@ export default function About() {
             </div>
             <div className="link-button">
                     <a href='#projects' className="link">
-                        Learn More About My Projects <FaArrowDown />
+                        View My Projects Below <FaArrowDown />
                     </a>
                 </div>
         </div>

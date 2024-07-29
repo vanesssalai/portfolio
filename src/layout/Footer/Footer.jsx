@@ -5,12 +5,13 @@ export default function Footer() {
     return (
         <footer>
             <div className='footer-content'>
-                <h3>Connect with me!</h3>
-                <a className='footer-icon'>
+                <h3>Contact</h3>
+                <div className='footer-icon'>
                     <a>LinkedIn</a>
                     <a>GitHub</a>
                     <a>Email</a>
-                </a>
+                    <a>Resume</a>
+                </div>
             </div>
         </footer>
     )

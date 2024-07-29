@@ -9,19 +9,17 @@
 
 .project-item {
     min-height: 80vh;
-    min-width: 80vw;
     padding: 36px;
     margin: 24px 0;
-    border-radius: 40px;
     transform: translateY(20px);
     transition: transform 0.5s ease-out, box-shadow 0.5s ease-out;
     display: flex;
-    flex-direction: row;
-    gap: 72px;
+    flex-direction: column;
     align-items: center; 
-    background-color: rgba(150, 150, 150, 0.1);
     position: relative;
     overflow: visible;
+    border: solid 2px rgb(40, 40, 40);
+    border-style: solid none solid none;
 }
 
 .project-item.appear {
@@ -36,6 +34,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .project-image {
@@ -46,112 +45,48 @@
     border-radius: 20px;
     object-fit: contain;
     position: absolute;
-    transition: transform 0.5s ease, z-index 0s 0.5s;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* image animation */
-.project-image:nth-child(1) { 
-    z-index: 1; 
-}
-
-.project-image:nth-child(2) { 
-    z-index: 2; 
-    display: none;
-}
-
-.project-image:nth-child(3) { 
-    z-index: 3; 
-    display: none;
-}
-
-.project-item .project-image {
-    transition: transform 0.7s ease, z-index 0s;
-    transform: translateX(0) translateY(0);
-}
-
-.project-item:hover .project-image:nth-child(1) {
-    transform: translateX(32px) translateY(-20px);
-    transition-delay: 0s;
-}
-
-.project-item:hover .project-image:nth-child(2) {
-    transform: translateX(0) translateY(0);
-    display: block;
-    transition-delay: 0.35s;
-}
-
-.project-item:hover .project-image:nth-child(3) {
-    transform: translateX(-32px) translateY(20px);
-    display: block;
-    transition-delay: 0.7s;
-}
-
-.project-image:hover {
-    z-index: 4 !important;
-    transition: z-index 0s !important;
 }
 
 /* text and information */
 .project-information-container {
-    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin: 24px 0;
 }
 
-.project-information-container h3 {
+.project-information-container .project-name {
+    font-size: 60px;
+    font-weight: 200;
+    letter-spacing: 1px;
     margin: 12px 0;
-    font-size: 28px;
 }
 
-.project-information-container p {
-    margin: 8px 0 16px 0;
+.project-information-desc, .project-desc {
+    font-size: 24px;
+    margin: 16px 0 24px 0;
+    width: 40vw;
 }
 
-.project-information-container a {
+.view-more-button {
     padding: 6px 12px;
     background-color: rgb(40, 40, 40);
     border-radius: 12px;
     text-decoration: none;
     color: #F6F7F8;
-}
-
-.project-information-container a:hover {
-    text-decoration: underline;
-    transition: background-color 0.5s ease-in-out;
-    animation: colorChange 2s linear infinite;
-}
-
-.hidden {
-    display: none;
-    position: absolute;
-    bottom: 24px; 
-    right: 20px; 
     cursor: pointer;
     font-size: 20px;
-    transition: 0.7s all ease-out;
+    transition: transform 0.5s ease, background-color 0.3s ease;
 }
 
-.hidden:hover {
-    transform: translateY(-6px);
-}
-
-.project-item:hover .hidden {
-    display: block;
-    transition: color 0.5s ease-in-out;
-    color: #F6F7F8;
-}
-
-@keyframes colorChange {
-    0% { color: #FF3366; }
-    25% { color: #2EC4B6; }
-    50% { color: #F6F7F8; }
-    75% { color: #20A4F3; }
-    100% { color: #FF3366; }
+.view-more-button:hover {
+    background-color: rgb(50, 50, 50);
+    transform: translateY(-10px);
 }
 
 @media screen and (max-width: 768px) {
     .project-item {
         flex-direction: column;
-        /* min-height: ; */
         min-width: 80vw;
         padding: 24px;
         gap: 20px;

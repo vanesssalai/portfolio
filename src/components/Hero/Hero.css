@@ -6,7 +6,13 @@
     min-height: calc(100vh - 80px);
     justify-content: center;
     text-align: center;
+
+    h1 {
+        font-size: 40px;
+        font-weight: 500;
+    }
 }
+
 
 .link-button {
     margin-top: 20px;
@@ -22,19 +28,10 @@
     border: 2px solid #FF3366;
     border-radius: 25px;
     transition: all 0.3s ease;
-    animation: colorChange 10s infinite;
 }
 
 .link:hover {
     background-color: #FF3366;
     color: white;
     animation: none;
-}
-
-@keyframes colorChange {
-    0% { color: #FF3366; border-color: #FF3366; }
-    25% { color: #2EC4B6; border-color: #2EC4B6; }
-    50% { color: #F6F7F8; border-color: #F6F7F8; }
-    75% { color: #20A4F3; border-color: #20A4F3; }
-    100% { color: #FF3366; border-color: #FF3366; }
 }

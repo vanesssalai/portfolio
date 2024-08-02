@@ -15,6 +15,12 @@ export default function Projects() {
             images: [MechHub],
             path: '/mechhub'
         },
+        {
+            name: 'Get It Done',
+            description: 'Simple to-do list', 
+            images: [],
+            path: '/'
+        }
     ];
 
     const projectRefs = useRef([]);

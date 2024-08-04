@@ -105,7 +105,8 @@ export default function GetItDone() {
                         <p className="desc-desc">
                         </p>
                     </div> */}
-                    <h5>Google Calendar Integration</h5>
+                    <h5>Google API Integration</h5>
+                    <p>Used Google API for login and calendar.</p>
                     <a className="project-links" id="er">Entity-Relationship Diagram</a>
                     <p>image will go here</p>
                     <a className="project-links" id="conclusion">Conclusion</a>

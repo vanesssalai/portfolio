@@ -17,8 +17,8 @@ export default function Projects() {
             path: '/mechhub'
         },
         {
-            name: 'Get It Done',
-            description: 'Simple to-do list using MERN stack', 
+            name: 'GetItDone',
+            description: 'Project Manager using MERN stack', 
             images: [GetItDone],
             path: '/getitdone'
         }

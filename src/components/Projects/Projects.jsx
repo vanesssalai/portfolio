@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { FaArrowRight } from "react-icons/fa";
 
 import MechHub from '../../assets/Images/MechHub/MechHub_preview.png';
+import GetItDone from '../../assets/Images/GetItDone/GetItDone.png'
 import './Projects.css';
 
 export default function Projects() {
@@ -17,9 +18,9 @@ export default function Projects() {
         },
         {
             name: 'Get It Done',
-            description: 'Simple to-do list', 
-            images: [],
-            path: '/'
+            description: 'Simple to-do list using MERN stack', 
+            images: [GetItDone],
+            path: '/getitdone'
         }
     ];
 

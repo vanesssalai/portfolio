@@ -131,7 +131,6 @@ export default function GetItDone() {
                             <li> /joke to get a random joke</li>
                         </p>
                     </div>
-                    <p>Used Google API for login and calendar.</p>
                     <a className="project-links" id="er">Entity-Relationship Diagram</a>
                     <p>image will go here</p>
                     <a className="project-links" id="conclusion">Conclusion</a>

@@ -124,3 +124,22 @@
         color: #20A4F3;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .GetItDone-content {
+        padding-top: 0;
+    }
+    
+    .gid-landing {
+        max-width: 100%;
+    }
+
+    .image-desc-container {
+        flex-direction: column;
+    }
+
+    .gid-new-container {
+        max-width: 100%;
+        align-items: center;
+    }
+}

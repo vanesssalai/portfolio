@@ -73,8 +73,13 @@ header {
 }
 
 @media (max-width: 768px) { 
-    .header-links {
-        gap: 16px;
+    header {
+        padding: 12px 24px;
+    }
+
+    .header-links, .name {
+        font-size: 12px;
+        gap: 12px;
     }    
 
     .animation-text {

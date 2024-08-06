@@ -1,16 +1,16 @@
 footer {
     margin-top: auto;
     padding: 24px;
-    width: auto;
+    width: 100%;
     max-width: 960px; 
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top:  1px solid rgb(20, 20, 20);
+    border-top: 1px solid rgb(20, 20, 20);
+    box-sizing: border-box;
 }
 
 .footer-content {
@@ -19,28 +19,48 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    h3 {
-        font-weight: 500;
-    }
 }
 
-.footer-icon {
-    width: 80%;
-    padding: 24px 8px;
+.footer-content h3 {
+    font-weight: 500;
+    margin: 0 0 16px 0;
+}
+
+.footer-links {
+    width: 100%;
+    padding: 16px 0;
     display: flex;
     justify-content: center;
-    cursor: pointer;
+    flex-wrap: wrap;
     gap: 28px;
-    text-decoration: none;
 }
 
-.footer-icon a {
+.footer-links a {
     color: #F6F7F8;
     text-decoration: none;
     transition: 0.5s;
 }
 
-.footer-icon a:hover {
+.footer-links a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 768px) { 
+    footer {
+        padding: 16px;
+    }
+
+    .footer-content h3 {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .footer-links {
+        padding: 8px 0;
+        gap: 16px;
+    }
+
+    .footer-links a {
+        font-size: 14px;
+    }
 }

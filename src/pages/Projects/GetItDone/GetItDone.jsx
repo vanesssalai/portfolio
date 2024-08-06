@@ -4,6 +4,7 @@ import Landing from '../../../assets/Images/GetItDone/Landing.png';
 import NewProject from '../../../assets/Images/GetItDone/NewProject.png';
 import NewTask from '../../../assets/Images/GetItDone/NewTask.png';
 import SubTasks from '../../../assets/Images/GetItDone/SubTasks.png';
+import Telebot from '../../../assets/Images/GetItDone/Telebot.png'
 import ProjectsPage from '../ProjectsPage';
 import Format from "../../../layout/Format/Format";
 import './GetItDone.css';
@@ -26,6 +27,10 @@ export default function GetItDone() {
         return () => {
             document.removeEventListener('mousedown', handleClickOutside);
         };
+    }, []);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
     }, []);
 
     return (
@@ -54,7 +59,7 @@ export default function GetItDone() {
                     sourceLink="https://github.com/vanesssalai/GetItDone"
                 />
                 <div className="GetItDone-content">
-                    <p>GetItDone is a simple MERN to-do list/ glorified project management web application with integrated Google calendar api</p>
+                    <p>GetItDone is a simple MERN to-do list/ glorified project management web application with a telegram bot.</p>
                     <div className="gid-landing-container">
                         <img 
                             src={Landing}
@@ -104,8 +109,28 @@ export default function GetItDone() {
                         </div>
                         <p className="desc-desc">
                         </p>
-                    </div> */}
-                    <h5>Google API Integration</h5>
+                    </div>
+                    <h5>Google API Integration</h5> */}
+                    <h5>GetItDone Telegram Bot</h5>
+                    <div className="image-desc-container">
+                        <div className="gid-new-container">
+                            <img 
+                                src={Telebot}
+                                alt="Telebot"
+                                className="gid-new"
+                            />
+                            <p className="image-desc">Image of the telebot</p>
+                        </div>
+                        <p className="desc-desc">
+                            The telegram bot is made using <a href="https://telegraf.js.org/">telegraf</a>. It will send reminders for tasks 1 week, 3 days and 1 day before the due date.
+                            <br />There are the following commands: 
+                            <li> /start to start the bot</li>
+                            <li> /help to list commands</li>
+                            <li> /viewtasks to view all incomplete tasks</li>
+                            <li> /viewalltasks to view all incomplete tasks and subtasks</li>
+                            <li> /joke to get a random joke</li>
+                        </p>
+                    </div>
                     <p>Used Google API for login and calendar.</p>
                     <a className="project-links" id="er">Entity-Relationship Diagram</a>
                     <p>image will go here</p>

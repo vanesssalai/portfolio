@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import MechHub_preview from '../../../assets/Images/MechHub/MechHub_preview.png';
 import ProjectsPage from '../ProjectsPage';
@@ -6,6 +6,10 @@ import Format from "../../../layout/Format/Format";
 import './MechHub.css';
 
 export default function MechHub() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    
     return (
         <Format content={
             <>
@@ -16,7 +20,7 @@ export default function MechHub() {
                     sourceLink="https://github.com/vanesssalai/orbital-mechhub"
                 />
                 <div className="mechHub-content">
-                    <p>MechHub is a Full-Stack E-Commerce Site for Mechanical Keyboards built for NUS Orbital 2024.</p>
+                    <p >MechHub is a Full-Stack E-Commerce Site for Mechanical Keyboards built for NUS Orbital 2024.</p>
                     <img 
                         src={MechHub_preview}
                         alt="MechHub"

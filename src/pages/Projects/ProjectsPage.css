@@ -94,3 +94,36 @@
     min-height: 16px;
     width: 16px;
 }
+
+@media screen and (max-width: 768px) {
+    .project-content-container {
+        max-width: 80vw;
+        flex-direction: column;
+        padding: 8px 8px 0 8px;
+    }
+
+    .project-header {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .redirect-links, .redirect-links a {
+        gap: 4px;
+    }
+
+    .tech-stack {
+        .tech-stack-stack {
+            justify-content: flex-start;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+            p {
+                font-size: 14px;
+                padding: 4px 8px;
+                margin: 4px 2px;
+            }
+        }
+    }
+}

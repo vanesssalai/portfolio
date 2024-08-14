@@ -1,6 +1,8 @@
 import React from "react";
 import { FaArrowDown } from "react-icons/fa";
 import Self_Portrait from '../../assets/Images/About/tempProfile.jpg';
+import Vanesssa from '../../assets/Images/About/VanessaLai.jpg';
+
 import './AboutMe.css';
 
 export default function About() {
@@ -9,7 +11,7 @@ export default function About() {
             <h1>About Me</h1>
             <div className="about-container">
                 <div className="about-image">
-                    <img src="/src/assets/Images/About/VanessaLai.jpg" alt="Vanessa"/>
+                    <img src={Vanesssa} alt="Vanessa"/>
                 </div>
                 <div className="about-text">
                     <p>

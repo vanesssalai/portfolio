@@ -5,6 +5,10 @@
     align-items: center;
     overflow-x: hidden;
     min-height: 100vh;
+
+    h1 {
+        color: #20A4F3;
+    }
 }
 
 .about-container {

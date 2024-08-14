@@ -9,8 +9,8 @@ export default function Footer() {
                 <div className='footer-links'>
                     <a href='https://www.linkedin.com/in/vanessa-lai-2496b52b2/'>LinkedIn</a>
                     <a href='https://github.com/vanesssalai'>GitHub</a>
-                    <a href='mailto:vlaiyz2605@gmail.com'>Email</a>
-                    <a href='#'>Resume</a>
+                    <a href='mailto:vanessa_lai@u.nus.edu'>Email</a>
+                    <a href='/static/VanessaLai_Resume.pdf'>Resume</a>
                 </div>
             </div>
         </footer>

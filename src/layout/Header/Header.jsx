@@ -45,7 +45,7 @@ export default function Header() {
                 <div className="header-links">
                     <a className="header-about" href="/#about">About Me</a>
                     <a className="header-projects" href="/#projects">Projects</a>
-                    <a className="header-resume">Resume</a>
+                    <a className="header-resume" href="/static/VanessaLai_Resume.pdf">Resume</a>
                 </div>
             </header>
             {showAnimation && (

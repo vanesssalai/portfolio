@@ -5,6 +5,10 @@
     align-items: center;
     overflow-x: hidden;
     min-height: 100vh;
+
+    h1 {
+        color: #2EC4B6;;
+    }
 }
 
 .project-item {

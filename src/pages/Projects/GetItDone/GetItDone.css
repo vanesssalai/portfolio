@@ -76,6 +76,9 @@
     max-width: 100%;
 }
 
+.gid-tele {
+    max-width: 80%;
+}
 .gid-subtasks-container {
     max-width: 40%;
     flex: 2;

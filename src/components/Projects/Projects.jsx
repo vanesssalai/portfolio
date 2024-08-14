@@ -3,7 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { FaArrowRight } from "react-icons/fa";
 
 import MechHub from '../../assets/Images/MechHub/MechHub_preview.png';
-import GetItDone from '../../assets/Images/GetItDone/GetItDone.png'
+import GetItDone from '../../assets/Images/GetItDone/GetItDone.png';
+import UltimateTTT from '../../assets/Images/UltimateTTT/UltimateTTT.png';
 import './Projects.css';
 
 export default function Projects() {
@@ -21,6 +22,12 @@ export default function Projects() {
             description: 'Project Manager using MERN stack', 
             images: [GetItDone],
             path: '/getitdone'
+        },
+        {
+            name: 'Ultimate TicTacToe',
+            description: 'Online multiplayer ultimate tictactoe game',
+            images: [UltimateTTT],
+            path: '/ultimatettt'
         }
     ];
 

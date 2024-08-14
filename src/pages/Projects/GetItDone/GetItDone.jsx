@@ -43,9 +43,9 @@ export default function GetItDone() {
                             <div className="dropdown-option">
                                 <a href="#features">Features</a>
                             </div>
-                            <div className="dropdown-option">
+                            {/* <div className="dropdown-option">
                                 <a href="#er">Entity Relationship Diagram</a>
-                            </div>
+                            </div> */}
                             <div className="dropdown-option">
                                 <a href="#conclusion">Conclusion</a>
                             </div>
@@ -59,7 +59,7 @@ export default function GetItDone() {
                     sourceLink="https://github.com/vanesssalai/GetItDone"
                 />
                 <div className="GetItDone-content">
-                    <p>GetItDone is a simple MERN to-do list/ glorified project management web application with a telegram bot.</p>
+                    <p>GetItDone is a simple full-stack MERN to-do list/ glorified project management web application with a telegram bot.</p>
                     <div className="gid-landing-container">
                         <img 
                             src={Landing}
@@ -117,7 +117,7 @@ export default function GetItDone() {
                             <img 
                                 src={Telebot}
                                 alt="Telebot"
-                                className="gid-new"
+                                className="gid-tele"
                             />
                             <p className="image-desc">Image of the telebot</p>
                         </div>
@@ -128,11 +128,12 @@ export default function GetItDone() {
                             <li> /help to list commands</li>
                             <li> /viewtasks to view all incomplete tasks</li>
                             <li> /viewalltasks to view all incomplete tasks and subtasks</li>
+                            <li> /markcomplete to mark a task or subtask as complete</li>
                             <li> /joke to get a random joke</li>
                         </p>
                     </div>
-                    <a className="project-links" id="er">Entity-Relationship Diagram</a>
-                    <p>image will go here</p>
+                    {/* <a className="project-links" id="er">Entity-Relationship Diagram</a>
+                    <p>image will go here</p> */}
                     <a className="project-links" id="conclusion">Conclusion</a>
                     <p>Overall, this was a fast and relatively simple project I did to get a feel of using a MERN stack. The integration of the Google API was definitely more difficult than initially anticipated. I had fun making the web application.</p>
                 </div>

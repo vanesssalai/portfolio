@@ -1,7 +1,7 @@
 import React from "react";
 import { FaArrowDown } from "react-icons/fa";
-import Self_Portrait from '../../assets/Images/About/tempProfile.jpg'
-import './AboutMe.css'
+import Self_Portrait from '../../assets/Images/About/tempProfile.jpg';
+import './AboutMe.css';
 
 export default function About() {
     return (
@@ -9,21 +9,23 @@ export default function About() {
             <h1>About Me</h1>
             <div className="about-container">
                 <div className="about-image">
-                    <img src={Self_Portrait} alt="Self Portrait" />
-                    <p>Self Potrait of the creator</p>
-                    <a>*we do not guarantee that this is an accurate depiction </a>
+                    <img src="/src/assets/Images/About/VanessaLai.jpg" alt="Vanessa"/>
                 </div>
                 <div className="about-text">
-
-                    <p>The creator of this page is currently too shy to do this part, we seek your understanding</p>
+                    <p>
+                        I'm Vanessa, a Year 2 Business Analytics student at the National University of Singapore.
+                        
+                    </p>
+                    <p>
+                        In my free time I also enjoy anime, building keyboards and grandma-ish activities such as crocheting and legos.
+                    </p>
                 </div>
-                
             </div>
             <div className="link-button">
-                    <a href='#projects' className="link">
-                        View My Projects Below <FaArrowDown />
-                    </a>
-                </div>
+                <a href='#projects' className="link">
+                    View My Projects Below <FaArrowDown />
+                </a>
+            </div>
         </div>
     )
 }

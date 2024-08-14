@@ -1,6 +1,52 @@
 import React, { useState, useEffect } from "react";
 import './Header.css';
 
+const ANIMATION_FRAMES = [
+    "♪♬┏(⌐■_■)┛",
+    "♬♪┗(⌐■_■)┓"
+];
+const ANIMATION_INTERVAL = 500;
+const ANIMATION_DURATION = 8000;
+
+const resetAnimation = (element) => {
+    if (element) {
+        element.style.animation = 'none';
+        element.offsetHeight; // Trigger reflow
+        element.style.animation = null;
+    }
+};
+
+function HeaderContent({ toggleAnimation }) {
+    return (
+        <header>
+            <div className="name">
+                <a onClick={toggleAnimation}>Vanessa Lai</a>
+            </div>
+            <nav className="header-links">
+                <a className="header-about" href="/#about">About Me</a>
+                <a className="header-projects" href="/#projects">Projects</a>
+                <a 
+                    className="header-resume"
+                    href="/static/VanessaLai_Resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                        Resume
+                </a>
+            </nav>
+        </header>
+    );
+}
+
+function AnimationComponent({ frame }) {
+    return (
+        <div className="animation-container">
+            <div className="animation-text">
+                {ANIMATION_FRAMES[frame]}
+            </div>
+        </div>
+    );
+}
+
 export default function Header() {
     const [showAnimation, setShowAnimation] = useState(false);
     const [animationFrame, setAnimationFrame] = useState(0);
@@ -8,53 +54,32 @@ export default function Header() {
     const toggleAnimation = () => {
         setShowAnimation(true);
         setAnimationFrame(0);
-        const animationElement = document.querySelector('.animation-text');
-        if (animationElement) {
-            animationElement.style.animation = 'none';
-            animationElement.offsetHeight; 
-            animationElement.style.animation = null;
-        }
+        resetAnimation(document.querySelector('.animation-text'));
     };
-
-    const animationFrames = [
-        "♪♬┏(⌐■_■)┛",
-        "♬♪┗(⌐■_■)┓"
-    ];
 
     useEffect(() => {
         let animationInterval;
         if (showAnimation) {
             animationInterval = setInterval(() => {
-                setAnimationFrame((prevFrame) => (prevFrame + 1) % animationFrames.length);
-            }, 500); 
+                setAnimationFrame((prevFrame) => (prevFrame + 1) % ANIMATION_FRAMES.length);
+            }, ANIMATION_INTERVAL);
 
-            setTimeout(() => {
+            const timer = setTimeout(() => {
                 clearInterval(animationInterval);
                 setShowAnimation(false);
-            }, 8000); 
+            }, ANIMATION_DURATION);
+
+            return () => {
+                clearInterval(animationInterval);
+                clearTimeout(timer);
+            };
         }
-        return () => clearInterval(animationInterval);
     }, [showAnimation]);
 
     return (
         <>
-            <header>
-                <div className="name">
-                    <a onClick={toggleAnimation}>Vanessa Lai</a>
-                </div>
-                <div className="header-links">
-                    <a className="header-about" href="/#about">About Me</a>
-                    <a className="header-projects" href="/#projects">Projects</a>
-                    <a className="header-resume" href="/static/VanessaLai_Resume.pdf">Resume</a>
-                </div>
-            </header>
-            {showAnimation && (
-                <div className="animation-container">
-                    <div className="animation-text">
-                        {animationFrames[animationFrame]}
-                    </div>
-                </div>
-            )}
+            <HeaderContent toggleAnimation={toggleAnimation} />
+            {showAnimation && <AnimationComponent frame={animationFrame} />}
         </>
     );
 }

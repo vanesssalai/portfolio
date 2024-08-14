@@ -17,6 +17,11 @@
     }
 }
 
+.mh-desc {
+    margin-top: 24px;
+    align-self: flex-start;
+}
+
 .mh-img {
     width: 70%;
     align-self: center;

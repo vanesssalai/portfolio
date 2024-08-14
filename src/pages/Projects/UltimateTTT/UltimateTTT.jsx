@@ -20,14 +20,15 @@ export default function UltimateTTT() {
                     sourceLink="https://github.com/vanesssalai/ultimate-ttt"
                 />
                 <div className="mechHub-content">
-                    <p >This is an ultimate TicTacToe implementation using javascript.</p>
+                    <p>This project is an online multiplayer version of Ultimate Tic-Tac-Toe, which reminds me of playing it in class in secondary school.</p>
                     <img 
                         src={UltimateTTT_preview}
                         alt="MechHub"
                         className="mh-img"
                     />
                     <p>
-                        I used socket.io to allow for users to send a game code to their friends and play online. 
+                    The implementation uses React for the frontend and NodeJS with Socket.io for the backend.
+                    React hooks are used for state management, while Socket.io, with its real-time communication capabilities, is integrated for instant updates. The implementation also includes the logic for handling the ultimate tic tac toe rules, such as determining which board is playable based on the previous move.
                         <br /> A future development would be to add a bot to allow for single player modes.
                     </p>
                 </div>

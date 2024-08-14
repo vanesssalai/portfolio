@@ -26,10 +26,13 @@ export default function MechHub() {
                         alt="MechHub"
                         className="mh-img"
                     />
-                    <p>
+                    <p className="mh-desc">
                         The web application includes features such as user chats, listings and a forum. 
-                        <br />I mainly worked on the CRUD system for listing, likes and following, the forum system, recommendation system, product search and filter and the seller dashboard.  
-                        For more details on the features and their implementaion, you may view the README in the <a href="https://github.com/vanesssalai/orbital-mechhub">source code</a>.
+                    </p>
+                    <p className="mh-desc">
+                    I mainly worked on the CRUD system for listing, likes and following, the forum system, the recommendation system, product search and filter and the seller dashboard. 
+We also utilised Jest and React Testing Library to conduct unit testing.
+ For more details on the features and their implementation, you may view the README in the <a href="https://github.com/vanesssalai/orbital-mechhub">source code</a>.
                     </p>
                 </div>
             </>

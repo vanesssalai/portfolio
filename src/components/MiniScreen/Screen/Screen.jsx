@@ -93,7 +93,7 @@ export default function Screen({ hero }) {
 
     return (
         <div className="screen">
-            <div id="heroHeader">
+            <div className="heroHeader">
                 <h1>Select A Hero</h1>
                 <h3 id="heroClass">{selectedHero.heroClass}</h3>
             </div>

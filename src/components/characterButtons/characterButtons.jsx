@@ -1,6 +1,7 @@
 import React from "react";
 import aboutLogo from '../../assets/Images/Character/aboutLogo.png';
 import mechhubLogo from '../../assets/Images/Character/mechhubLogo.png';
+import getitdoneLogo from '../../assets/Images/Character/getitdoneLogo.png';
 import githubLogo  from '../../assets/Images/Character/githubLogo.png';
 import linkedinLogo from '../../assets/Images/Character/linkedinLogo.png';
 import gmailLogo from '../../assets/Images/Character/gmailLogo.png';
@@ -27,11 +28,11 @@ export default function CharacterButtons({ onHeroSelect }) {
             content: [
                 {
                     name: 'MechHub',
-                    logo: [mechhubLogo],
+                    logo: mechhubLogo,
                 },
                 {
                     name: 'GetitDone',
-                    logo: '',
+                    logo: getitdoneLogo,
                 },
                 {
                     name: 'Ultimate TicTacToe',

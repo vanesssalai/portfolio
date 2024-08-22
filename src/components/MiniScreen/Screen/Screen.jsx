@@ -53,7 +53,7 @@ export default function Screen({ hero }) {
             heroClass: 'Projects',
             heroName: 'Ultimate TicTacToe',
             heroDescSub: 'Online multiplayer ultimate tictactoe game',
-            health: '18%',
+            health: '83%',
             mana: '96%',
             skills: ['Nodejs', 'TailwindCSS','Socketio'],
             description: [

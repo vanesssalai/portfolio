@@ -1,8 +1,8 @@
 import React from "react";
-import Vanesssa from '../../../assets/Images/About/VanessaLai.jpg';
-import Mechhub from '../../../assets/Images/MechHub/MechHub_preview.png';
-import getItDone from '../../../assets/Images/GetItDone/GetItDone.png';
-import ultimateTTT from '../../../assets/Images/UltimateTTT/UltimateTTT.png';
+import Vanesssa from '../../assets/Images/About/VanessaLai.jpg';
+import Mechhub from '../../assets/Images/MechHub/MechHub_preview.png';
+import getItDone from '../../assets/Images/GetItDone/GetItDone.png';
+import ultimateTTT from '../../assets/Images/UltimateTTT/UltimateTTT.png';
 import { FaLock, FaAngleRight } from "react-icons/fa";
 import './Screen.css';
 
@@ -162,7 +162,7 @@ export default function Screen({ hero }) {
                             className="playable"
                             onClick={handlePlayButtonClick}
                         >
-                            Play Now
+                            Start Game
                         </button>
                     </div>
                 ) : (

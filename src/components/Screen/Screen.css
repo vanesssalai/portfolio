@@ -207,7 +207,7 @@
 .playable, .unplayable {
     font-family: Monda;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.25rem;
     border-radius: 1rem;
     padding: .5rem 1rem;
     border: none;

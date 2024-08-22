@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaCheck } from 'react-icons/fa';
-import Screen from '../MiniScreen/Screen/Screen';
+import Screen from '../Screen/Screen';
 import CharacterButtons from '../characterButtons/characterButtons';
 import LandingBackground from './landingBackground';
 import './landingScreen.css';

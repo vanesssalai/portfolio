@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400..700&display=swap');
 html, body {
     background-color: #000000;
-    font-family: "Rethink Sans", sans-serif;
+    font-family: "Monda";
     color: #F6F7F8;
     scroll-behavior: smooth;
+    padding: 1rem 2rem 0rem;
 }

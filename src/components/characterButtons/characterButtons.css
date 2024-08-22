@@ -1,0 +1,58 @@
+.chrButtons {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+}
+
+.chrButtonContainer {
+    display: flex;
+    width: 5rem;
+    flex-direction: column;
+    padding: .25rem;
+    align-items: center;
+    text-align: center;
+    text-wrap: break-word;
+
+    p {
+        display: none;
+        margin: 0.1rem;
+        transition: 0.5s ease-in-out;
+    }
+}
+
+.heroChrButtonContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.chrButton {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    width: 5rem;
+    height: 5rem;
+    padding: .5rem;
+    flex-shrink: 0;
+    transition: 0.3s ease-in-out;
+
+    img {
+        max-width:4rem;
+        height: 4rem;
+    }
+}
+
+.chrButtonContainer:hover p {
+    display: inline;
+    
+}
+
+.chrButton:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 .5rem rgba(255, 255, 255, 0.5);
+}

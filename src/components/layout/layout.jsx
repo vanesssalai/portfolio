@@ -1,8 +1,8 @@
 import React from "react";
-import Header from '../../layout/Header/Header'
-import Footer from '../../layout/Footer/Footer';
+import Header from './header/header'
+import Footer from './footer/footer';
 
-export default function Format({content}) {
+export default function Layout({content}) {
     return (
             <div>
             <Header />

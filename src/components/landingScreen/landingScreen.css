@@ -1,0 +1,73 @@
+.landingScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 4rem);
+}
+
+.landingHeader {
+    position: absolute;
+    top: 2.75rem;
+    padding: 1rem 1.5rem;
+    border: 1px rgb(192, 192, 192) solid;
+    border-radius: 1rem;
+}
+
+.searchHeader, .foundHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.foundCheck {
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.searchAnimation {
+    width: 3rem;
+    height: 3rem;
+    border: .5rem solid rgb(167, 167, 167);
+    border-top: .5rem solid transparent;
+    border-radius: 50%;
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.headerText {
+    width: 12.5rem;
+    text-align: center;
+}
+
+.confirmButton {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    background-color: rgb(192, 192, 192);
+    color: black;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    opacity: 0;
+    animation: fadeIn 1s ease-out 1s forwards;
+}
+
+.confirmButton:hover {
+    background-color: #27ae60;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

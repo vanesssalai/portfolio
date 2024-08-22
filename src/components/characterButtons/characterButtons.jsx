@@ -3,13 +3,13 @@ import aboutLogo from '../../assets/Images/Character/aboutLogo.png';
 import mechhubLogo from '../../assets/Images/Character/mechhubLogo.png';
 import './characterButtons.css';
 
-export default function CharacterButtons() {
+export default function CharacterButtons({ onHeroSelect }) {
     const heroes = [
         {
             type: 'about',
             content: [
                 {
-                    name: 'vanessa',
+                    name: 'Vanessa',
                     logo: [aboutLogo]
                 }, {
                     name: 'resume',
@@ -61,7 +61,10 @@ export default function CharacterButtons() {
                     <div className="heroChrButtonContainer">
                         {hero.content.map(item => (
                             <div key={item.name} className="chrButtonContainer">
-                                <button className="chrButton">
+                                <button
+                                    className="chrButton"
+                                    onClick={() => onHeroSelect(item.name)}
+                                >
                                     <img src={item.logo} alt={item.name} />
                                 </button>
                                 <p>{item.name}</p>

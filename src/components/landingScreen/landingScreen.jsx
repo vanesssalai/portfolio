@@ -7,27 +7,38 @@ import './landingScreen.css';
 export default function LandingScreen() {
     const [showConfirm, setShowConfirm] = useState(false);
     const [gameStarted, setGameStarted] = useState(false);
+    const [playerNumbers, setPlayerNumbers] = useState(0);
+    const [selectedHero, setSelectedHero] = useState(null);
 
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowConfirm(true);
-        }, 3000); 
+        }, 2000);
+
+        setPlayerNumbers(0);
 
         return () => clearTimeout(timer);
     }, []);
 
     const handleEnterGame = () => {
-        console.log('entering game');
-        setGameStarted(true);
-    }
+        setPlayerNumbers(prevNumber => prevNumber + 1);
+        
+        setTimeout(() => {
+            setGameStarted(true);
+        }, 300);
+    };
+
+    const handleHeroSelect = (heroName) => {
+        setSelectedHero(heroName);
+    };
 
     if (gameStarted) {
         return (
             <div className="newPage">
                 <div className='miniScreen'>
-                    <Screen/>
+                    <Screen hero={selectedHero} />
                 </div>
-                <CharacterButtons />
+                <CharacterButtons onHeroSelect={handleHeroSelect} />
             </div>
         );
     }
@@ -35,7 +46,7 @@ export default function LandingScreen() {
     return (
         <div className="landingScreen">
             <div className="landingHeader">
-                {!showConfirm ?(
+                {!showConfirm ? (
                     <div className="headerIcon searchHeader">
                         <div className="searchAnimation"></div>
                         <h3 className="headerText searchGame">Searching For Game</h3>
@@ -50,9 +61,15 @@ export default function LandingScreen() {
                 )}
             </div>
             {showConfirm && (
-                <button className="confirmButton" onClick={handleEnterGame}>
-                    Enter Game
-                </button>
+                <div className="accept">
+                    <h4>
+                        Waiting for Players:
+                        <br /> {playerNumbers}/ 1
+                    </h4>
+                    <button className="acceptButton" onClick={handleEnterGame}>
+                        Accept
+                    </button>
+                </div>
             )}
         </div>
     );

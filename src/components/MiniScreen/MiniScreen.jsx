@@ -5,7 +5,6 @@ import LandingScreen from "../landingScreen/landingScreen";
 export default function MiniScreen() {
     return (
         <div className="miniScreen">
-            {/* <Screen /> */}
             <LandingScreen />
         </div>
     )

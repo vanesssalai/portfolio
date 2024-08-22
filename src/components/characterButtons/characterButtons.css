@@ -18,7 +18,7 @@
 
     p {
         display: none;
-        margin: 0.1rem;
+        margin-top: 0.1rem;
         transition: 0.5s ease-in-out;
     }
 }

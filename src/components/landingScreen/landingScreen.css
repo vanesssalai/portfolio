@@ -10,8 +10,9 @@
     position: absolute;
     top: 2.75rem;
     padding: 1rem 1.5rem;
-    border: 1px rgb(192, 192, 192) solid;
+    /* border: 1px rgb(192, 192, 192) solid; */
     border-radius: 1rem;
+    background-color: rgb(12, 12, 12);
 }
 
 .searchHeader, .foundHeader {
@@ -25,6 +26,7 @@
     height: 4rem;
     text-align: center;
     font-size: 3rem;
+    color: rgb(167, 167, 167);
 }
 
 .searchAnimation {
@@ -51,13 +53,46 @@
     animation: fadeIn 1s ease-out 1s forwards;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+}
+
+.waitingText {
+    opacity: 0;
+    animation: fadeIn 1s ease-out 1.25s forwards;
 }
 
 .accept h4 {
     margin: 0;
     text-align: center;
     font-size: 1.5rem;
+}
+
+.accept h4 .dots {
+    display: inline-block;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+@keyframes dotPulse {
+    0%, 20% {
+        content: '';
+    }
+    40% {
+        content: '.';
+    }
+    60% {
+        content: '..';
+    }
+    80% {
+        content: '...';
+    }
+    100% {
+        content: '';
+    }
+}
+
+.dots::after {
+    content: '';
+    animation: dotPulse 2s steps(4, end) infinite;
 }
 
 .acceptButton {
@@ -75,6 +110,8 @@
     border-radius: 4rem;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    opacity: 0;
+    animation: fadeIn 1s ease-out 1s forwards;
 }
 
 .acceptButton:hover {

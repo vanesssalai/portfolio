@@ -62,12 +62,12 @@ export default function LandingScreen() {
             </div>
             {showConfirm && (
                 <div className="accept">
-                    <h4>
-                        Waiting for Players:
+                    <h4 className="waitingText">
+                        Waiting for Players<span className="dots"></span>
                         <br /> {playerNumbers}/ 1
                     </h4>
                     <button className="acceptButton" onClick={handleEnterGame}>
-                        Accept
+                        Enter
                     </button>
                 </div>
             )}

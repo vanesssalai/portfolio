@@ -1,6 +1,10 @@
 import React from "react";
 import aboutLogo from '../../assets/Images/Character/aboutLogo.png';
 import mechhubLogo from '../../assets/Images/Character/mechhubLogo.png';
+import githubLogo  from '../../assets/Images/Character/githubLogo.png';
+import linkedinLogo from '../../assets/Images/Character/linkedinLogo.png';
+import gmailLogo from '../../assets/Images/Character/gmailLogo.png';
+import ultiTTTLogo from '../../assets/Images/Character/ultiTTTLogo.png';
 import './characterButtons.css';
 
 export default function CharacterButtons({ onHeroSelect }) {
@@ -13,7 +17,8 @@ export default function CharacterButtons({ onHeroSelect }) {
                     logo: [aboutLogo]
                 }, {
                     name: 'resume',
-                    logo: ''
+                    logo: [githubLogo],
+                    link: '../../../../static/VanessaLai_Resume.pdf' 
                 }
             ]
         },
@@ -30,7 +35,7 @@ export default function CharacterButtons({ onHeroSelect }) {
                 },
                 {
                     name: 'Ultimate TicTacToe',
-                    logo: '',
+                    logo: ultiTTTLogo,
                 }
             ]
         },
@@ -39,19 +44,30 @@ export default function CharacterButtons({ onHeroSelect }) {
             content: [
                 {
                     name: 'GitHub',
-                    logo: ''
+                    logo: githubLogo,
+                    link: 'https://github.com/vanesssalai'
                 },
                 {
                     name: 'LinkedIn',
-                    logo: ''
-                }, 
+                    logo: linkedinLogo,
+                    link: 'https://www.linkedin.com/in/vanessa-lai-2496b52b2/'
+                },
                 {
                     name: 'Email',
-                    logo: ''
+                    logo: gmailLogo,
+                    link: 'mailto:vanessa_lai@u.nus.edu'
                 }
             ]
         }
     ];
+
+    const handleButtonClick = (item) => {
+        if (item.link) {
+            window.open(item.link, '_blank');
+        } else {
+            onHeroSelect(item.name);
+        }
+    };
 
     return (
         <div className="chrButtons">
@@ -63,7 +79,7 @@ export default function CharacterButtons({ onHeroSelect }) {
                             <div key={item.name} className="chrButtonContainer">
                                 <button
                                     className="chrButton"
-                                    onClick={() => onHeroSelect(item.name)}
+                                    onClick={() => handleButtonClick(item)}
                                 >
                                     <img src={item.logo} alt={item.name} />
                                 </button>

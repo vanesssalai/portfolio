@@ -6,7 +6,7 @@
     overflow: hidden;
 }
 
-#heroHeader {
+.heroHeader {
     width: fit-content;
     height: fit-content;
     position: relative;
@@ -16,7 +16,7 @@
     flex-shrink: 0;
 }
 
-#heroHeader h1 {
+.heroHeader h1 {
     font-size: 4rem;
     margin: 0;
     font-weight: bolder;
@@ -27,7 +27,7 @@
     color: transparent;
 }
 
-#heroHeader h3 {
+.heroHeader h3 {
     position: absolute;
     bottom: 0;
     left: 1rem;
@@ -243,4 +243,34 @@
 	100% {
 		transform: translatey(0rem);
 	}
+}
+
+
+@media (max-width: 768px) {
+    .heroHeader h1 {
+        font-size: 3rem;
+    }
+
+    .heroHeader h3 {
+        font-size: x-large;
+    }
+
+    #heroContent {
+        flex-direction: column-reverse;
+    }
+
+    #heroDesc {
+        width: 90%;
+    }
+
+    .heroImageBox {
+        width: 90%;
+    }
+
+    .playable, .unplayable {
+        font-size: 1rem;
+        border-radius: 1rem;
+        padding: .5rem 1rem;
+        border: none;
+    }
 }

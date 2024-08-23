@@ -40,7 +40,7 @@ export default function LandingScreen() {
         console.log('game has started');
         return (
             <div className="newPage">
-                <div className='miniScreen'>
+                <div className='heroScreen'>
                     <Screen hero={selectedHero} />
                 </div>
                 <CharacterButtons onHeroSelect={handleHeroSelect} />

@@ -13,8 +13,8 @@
 }
 
 .landingBg.blurred {
-    filter: blur(0.15rem);
-    -webkit-filter: blur(0.15rem);
+    filter: blur(0.15rem) brightness(80%);
+    -webkit-filter: blur(0.15rem) brightness(80%);
 }
 
 .playText {
@@ -29,6 +29,7 @@
     height: 90%;
     width: 100%;
     gap: 1%;
+    max-height: 800px;
 }
 
 .gameCard {

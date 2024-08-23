@@ -196,6 +196,7 @@
     max-height: 100%;
     object-fit: contain;
     border-radius: 1rem;
+    animation: characterFloat 5s ease-in-out infinite;
 }
 
 .playButton {
@@ -224,7 +225,7 @@
     background-color: rgb(235, 235, 235);
     box-shadow: inset 0 0 .25rem rgb(84, 84, 84);
     transition: 0.3s ease-in-out;
-    animation: float 3s ease-in-out infinite;
+    /* animation: float 3s ease-in-out infinite; */
 }
 
 .playable:hover {
@@ -235,16 +236,27 @@
 
 @keyframes float {
 	0% {
-		transform: translatey(0rem);
+		transform: translatey(0rem) scale(1);
 	}
 	50% {
-		transform: translatey(-.2rem);
+		transform: translatey(-.2rem) scale(1.05);
 	}
 	100% {
 		transform: translatey(0rem);
 	}
 }
 
+@keyframes characterFloat {
+	0% {
+		transform: translatey(0rem);
+	}
+	50% {
+		transform: translatey(-.4rem);
+	}
+	100% {
+		transform: translatey(0rem);
+	}
+}
 
 @media (max-width: 768px) {
     .heroHeader h1 {

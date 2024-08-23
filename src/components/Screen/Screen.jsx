@@ -45,6 +45,7 @@ export default function Screen({ hero }) {
             skills: ['MongoDB', 'Express', 'ReactJS', 'NodeJS', 'TailwindCSS'],
             description: [
                 'GetItDone is a simple full-stack MERN to-do list/ glorified project management web application with a telegram bot.',
+                'Overall, this was a fast and relatively simple project I did to get a feel of using a MERN stack. The integration of the Google API was definitely more difficult than initially anticipated. I had fun making the web application.'
             ],
             image: getItDone,
             stats: 'https://github.com/vanesssalai/GetItDone',

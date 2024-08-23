@@ -84,7 +84,7 @@ export default function Screen({ hero }) {
     if (!selectedHero) {
         return (
             <div className="screen">
-                <div id="heroHeader">
+                <div className="heroHeader">
                     <h1>Select A Hero</h1>
                 </div>
             </div>

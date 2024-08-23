@@ -273,7 +273,7 @@
     }
 
     .playable, .unplayable {
-        font-size: 1rem;
+        font-size: .75rem;
         border-radius: 1rem;
         padding: .5rem 1rem;
         border: none;

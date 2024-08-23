@@ -144,8 +144,19 @@
     100% { opacity: 1; }
 }
 
-
 @media (max-width: 768px) {
+    .headerText {
+        width: 5.25rem;
+    }
+
+    .accept {
+        width: fit-content;
+    }
+
+    .acceptButton {
+        padding: .5rem 1rem;
+    }
+
     .acceptButton, .accept h4 {
         font-size: 1rem;
     }

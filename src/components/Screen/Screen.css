@@ -267,6 +267,11 @@
         width: 90%;
     }
 
+    .heroImageBox img {
+        max-width: 100%;
+        border-radius: .15rem;
+    }
+
     .playable, .unplayable {
         font-size: 1rem;
         border-radius: 1rem;

@@ -101,3 +101,16 @@
         font-size: larger;
     }
 }
+
+
+@media (max-width: 768px) {
+    .gameCardsContainer {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .gameCard {
+        width: 85%;
+        height: 27%;
+    }
+}

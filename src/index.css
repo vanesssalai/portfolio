@@ -12,4 +12,8 @@ html, body {
         font-size: .75rem;
         padding: .5rem 1rem 0rem;
     }
+
+    html {
+        padding: .25rem;
+    }
 }

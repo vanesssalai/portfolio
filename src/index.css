@@ -10,10 +10,10 @@ html, body {
 @media (max-width: 768px) {
     body {
         font-size: .75rem;
-        padding: .5rem 1rem 0rem;
+        padding: 0;
     }
 
     html {
-        padding: .25rem;
+        padding: .5rem;
     }
 }

@@ -248,11 +248,11 @@
 
 @media (max-width: 768px) {
     .heroHeader h1 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .heroHeader h3 {
-        font-size: x-large;
+        font-size: 1rem;
     }
 
     #heroContent {
@@ -263,13 +263,32 @@
         width: 90%;
     }
 
+    .heroDescHeader {
+        gap: 5%;
+    }
+
+    .viewStats, .unViewStats {
+        font-size: .7rem;
+        flex: 1;
+    }
+
+    .heroDescName {
+        flex: 2;
+    }
+
     .heroImageBox {
         width: 90%;
     }
 
     .heroImageBox img {
+        display: none;
         max-width: 100%;
         border-radius: .15rem;
+    }
+
+    .playButton {
+        bottom: 1rem;
+        right: 1rem;
     }
 
     .playable, .unplayable {

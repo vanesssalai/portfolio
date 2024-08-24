@@ -38,7 +38,7 @@
 
 #heroContent {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex: 1;
     min-height: 0;
     overflow: hidden;
@@ -71,7 +71,7 @@
 #heroDesc {
     display: flex;
     margin: 1rem 0 0;
-    width: 40%;
+    width: 50%;
     flex-direction: column;
     padding: .5rem;
     background: linear-gradient(rgba(185, 185, 185, 0.1), rgba(185, 185, 185, 0.1), rgba(0, 0, 0, 0));
@@ -260,7 +260,7 @@
 
 @media (max-width: 768px) {
     .heroHeader h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .heroHeader h3 {
@@ -269,6 +269,11 @@
 
     #heroContent {
         flex-direction: column-reverse;
+        display: block;
+    }
+
+    #heroDesc h5 {
+        margin: .5rem 0 .25rem;
     }
 
     #heroDesc {
@@ -289,6 +294,7 @@
     }
 
     .heroImageBox {
+        margin: 0;
         width: 90%;
     }
 

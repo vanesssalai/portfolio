@@ -3,7 +3,7 @@ import Vanesssa from '../../assets/Images/About/VanessaLai.jpg';
 import Mechhub from '../../assets/Images/MechHub/MechHub_preview.png';
 import getItDone from '../../assets/Images/GetItDone/GetItDone.png';
 import ultimateTTT from '../../assets/Images/UltimateTTT/UltimateTTT.png';
-import { FaLock, FaAngleRight } from "react-icons/fa";
+import { FaAngleRight } from "react-icons/fa";
 import './Screen.css';
 
 export default function Screen({ hero }) {
@@ -27,7 +27,7 @@ export default function Screen({ hero }) {
             heroDescSub: 'Full-Stack E-Commerce Site for Mechanical Keyboards',
             health: '100%',
             mana: '84%',
-            skills: ['ReactJS', 'Firebase', 'TensorFlow'],
+            skills: ['ReactJS', 'Firebase', 'TensorFlow', 'Jest'],
             description: [
                 'MechHub is a Full-Stack E-Commerce Site for Mechanical Keyboards built for NUS Orbital 2024.',
                 'The web application includes features such as user chats, listings and a forum.',
@@ -56,7 +56,7 @@ export default function Screen({ hero }) {
             heroDescSub: 'Online multiplayer ultimate tictactoe game',
             health: '83%',
             mana: '96%',
-            skills: ['Nodejs', 'TailwindCSS','Socketio'],
+            skills: ['Nodejs', 'Express', 'TailwindCSS', 'Socketio'],
             description: [
                 'his project is an online multiplayer version of Ultimate Tic-Tac-Toe, which reminds me of playing it in class in secondary school.',
                 'The implementation uses React for the frontend and NodeJS with Socket.io for the backend. React hooks are used for state management, while Socket.io, with its real-time communication capabilities, is integrated for instant updates. The implementation also includes the logic for handling the ultimate tic tac toe rules, such as determining which board is playable based on the previous move.',
@@ -120,7 +120,7 @@ export default function Screen({ hero }) {
                     </div>
                     
                     <div className="heroDescContainer">
-                        <div className="descContent">
+                        {/* <div className="descContent">
                             <h5>HP</h5>
                             <div className="statusBar">
                                 <div className="health" style={{width: selectedHero.health}}>
@@ -135,7 +135,7 @@ export default function Screen({ hero }) {
                                     {selectedHero.mana}
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="descContent">
                             <h5>Skills</h5>
                             <div className="skills">

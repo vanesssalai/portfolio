@@ -4,6 +4,6 @@
 
 @media (max-width: 768px) {
     .miniScreen {
-        height: 95vh;
+        height: calc(95vh - 1rem);
     }
 }

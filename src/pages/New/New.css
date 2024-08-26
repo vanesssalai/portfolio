@@ -8,5 +8,7 @@
 @media (max-width: 768px) {
     .newPage {
         align-content: space-around;
+        display: flex;
+        flex-direction: column;
     }
 }

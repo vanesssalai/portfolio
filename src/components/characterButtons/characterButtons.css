@@ -68,7 +68,7 @@
 
 @media (max-width: 768px) {
     .chrButtons {
-        height: 13rem;
+        height: 12rem;
     }
 
     .heroSection {
@@ -77,16 +77,32 @@
     }
 
     .chrButtonContainer {
-        margin-right:.5rem;
+        margin-right: .5rem;
+        width: 3.5rem;
+        height: 4.5rem;
 
         p {
             color: rgba(255, 255, 255, 0.75);
             margin-bottom: 0.1rem;
             opacity: 1;
+            font-size: 0.7rem;
         }
     }
 
     .chrButton {
         border-radius: .5rem;
+        max-width: 3.5rem;
+        max-height: 3.5rem;
+        padding: 0.3rem;
+
+        img {
+            max-width: 2.9rem;
+            height: 2.9rem;
+        }
+    }
+
+    .heroSection h3 {
+        font-size: 0.9rem;
+        margin-bottom: 0.3rem;
     }
 }

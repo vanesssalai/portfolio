@@ -149,6 +149,10 @@
         width: 5.25rem;
     }
 
+    .heroScreen {
+        height: calc(100%);
+    }
+
     .accept {
         width: 12.5rem;
     }

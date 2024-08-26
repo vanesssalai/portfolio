@@ -59,7 +59,6 @@
 
 .gameCardImage {
     height: 60%;
-
     -moz-border-radius: 0rem;
     -webkit-border-radius: 1rem 1rem 0rem 0rem;
     border-radius: 1rem 1rem 0rem 0rem;
@@ -113,11 +112,29 @@
     .gameCard {
         width: 85%;
         height: 28%;
+        border-radius: .5rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .gameCardImage {
+        width: 55%;
+        height: 100%;
+        border-radius: .5rem 0 0 .5rem;
     }
 
     .gameCardText {
+        padding: 0;
+        width: 45%;
+        height: 100%;
+        border-radius: 0 .5rem .5rem 0;
+
         h1, p {
             margin: 0;
+        }
+
+        p {
+            padding-bottom: .5rem;
         }
     }
 }

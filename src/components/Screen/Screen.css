@@ -259,6 +259,10 @@
 }
 
 @media (max-width: 768px) {
+    .screen {
+        height: 72vh;
+    }
+
     .heroHeader h1 {
         font-size: 2.5rem;
     }
@@ -269,7 +273,10 @@
 
     #heroContent {
         flex-direction: column-reverse;
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
     }
 
     #heroDesc h5 {
@@ -278,6 +285,7 @@
 
     #heroDesc {
         width: 90%;
+
     }
 
     .heroDescHeader {
@@ -294,14 +302,20 @@
     }
 
     .heroImageBox {
-        margin: 0;
+        margin: 1rem 0; /* Add some margin */
         width: 90%;
+        max-height: 30vh; /* Limit the height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .heroImageBox img {
-        display: none;
+        display: block; /* Show the image */
         max-width: 100%;
-        border-radius: .15rem;
+        max-height: 100%;
+        object-fit: contain;
+        border-radius: .5rem;
     }
 
     .playButton {

@@ -258,6 +258,18 @@
 	}
 }
 
+@keyframes characterFloatMobile {
+	0% {
+		transform: translatey(-.1rem);
+	}
+	50% {
+		transform: translatey(.1rem);
+	}
+	100% {
+		transform: translatey(-.1rem);
+	}
+}
+
 @media (max-width: 768px) {
     .screen {
         height: 72vh;
@@ -285,6 +297,7 @@
 
     #heroDesc {
         width: 90%;
+        margin: .5rem 0 0;
 
     }
 
@@ -316,6 +329,7 @@
         max-height: 100%;
         object-fit: contain;
         border-radius: .5rem;
+        animation: characterFloatMobile 5s ease-in-out infinite;
     }
 
     .playButton {

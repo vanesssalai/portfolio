@@ -109,11 +109,11 @@
 
     .gameCard {
         width: 30%;
-        border-radius: .25rem;
+        border-radius: .5rem;
     }
 
     .gameCardImage {
-
+        border-radius: .5rem .5rem  0 0 ;
     }
 
     .gameCardText {
@@ -125,6 +125,7 @@
 
         h1 {
             font-size: large;
+            margin-bottom: .25rem;
         }
 
         p {

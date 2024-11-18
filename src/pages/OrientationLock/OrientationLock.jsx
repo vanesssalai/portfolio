@@ -7,7 +7,7 @@ export default function OrientationLock({ children }) {
 
     useEffect(() => {
         const checkOrientation = () => {
-        setIsLandscape(window.innerWidth > window.innerHeight);
+            setIsLandscape(window.innerWidth > window.innerHeight);
         };
 
         checkOrientation();
@@ -17,13 +17,13 @@ export default function OrientationLock({ children }) {
 
     if (!isLandscape) {
         return (
-        <div className="rotation-prompt">
-            <div className="prompt-content">
-                <h1>Please Rotate Your Device</h1>
-                <p>This game is best played in landscape</p>
-                <RotateCcw className="rotate-icon" size={48} />
+            <div className="rotation-prompt">
+                <div className="prompt-content">
+                    <h1>Please Rotate Your Device</h1>
+                    <p>This game is best played in landscape</p>
+                    <RotateCcw className="rotate-icon" size={48} />
+                </div>
             </div>
-        </div>
         );
     }
 

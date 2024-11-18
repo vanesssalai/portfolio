@@ -9,6 +9,6 @@
     .newPage {
         align-content: space-around;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
 }

@@ -145,8 +145,28 @@
 }
 
 @media (max-width: 768px) {
+    .landingHeader {
+        padding: 0.25rem 1rem;
+    }
+
+    .searchAnimation {
+        width: 1.5rem;
+        height: 1.5rem;
+        border: .35rem solid rgb(167, 167, 167);
+        border-top: .35rem solid transparent;
+        border-radius: 50%;
+    }
+
+    .foundCheck {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.5rem;
+    }
+
     .headerText {
-        width: 5.25rem;
+        width: fit-content;
+        padding: 0 0.25rem;
+        margin: 0;
     }
 
     .heroScreen {

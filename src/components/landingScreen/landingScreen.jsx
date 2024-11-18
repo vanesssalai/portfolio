@@ -14,7 +14,7 @@ export default function LandingScreen() {
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowConfirm(true);
-        }, 2000);
+        }, 3000);
 
         setPlayerNumbers(0);
 

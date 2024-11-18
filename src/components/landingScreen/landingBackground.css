@@ -105,36 +105,31 @@
 @media (max-width: 768px) {
     .gameCardsContainer {
         height: 80%;
-        flex-direction: column;
-        justify-content: space-around;
     }
 
     .gameCard {
-        width: 85%;
-        height: 28%;
-        border-radius: .5rem;
-        display: flex;
-        flex-direction: row;
+        width: 30%;
+        border-radius: .25rem;
     }
 
     .gameCardImage {
-        width: 40%;
-        height: 100%;
-        border-radius: .5rem 0 0 .5rem;
+
     }
 
     .gameCardText {
-        padding: 0;
-        width: 60%;
-        height: 100%;
-        border-radius: 0 .5rem .5rem 0;
+
 
         h1, p {
             margin: 0;
         }
 
+        h1 {
+            font-size: large;
+        }
+
         p {
             padding-bottom: .5rem;
+            font-size: small;
         }
     }
 }

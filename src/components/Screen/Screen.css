@@ -43,6 +43,7 @@
     min-height: 0;
     overflow: hidden;
     justify-content: space-around;
+    padding: 0 1rem;
 }
     /* position: relative;
 }
@@ -323,6 +324,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        aspect-ratio: 1/1;
     }
 
     .skills p {
@@ -333,14 +335,14 @@
         display: block;
         max-width: 100%;
         max-height: 100%;
-        object-fit: contain;
+        object-fit: cover;
         border-radius: .5rem;
         animation: characterFloatMobile 5s ease-in-out infinite;
     }
 
     .playButton {
-        bottom: 1rem;
-        right: 1rem;
+        bottom: 1.5rem;
+        left: 0rem;
     }
 
     .playable, .unplayable {

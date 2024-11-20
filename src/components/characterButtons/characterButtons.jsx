@@ -56,7 +56,7 @@ export default function CharacterButtons({ onHeroSelect }) {
                 {
                     name: 'Email',
                     logo: gmailLogo,
-                    link: 'mailto:vanessa_lai@u.nus.edu'
+                    link: 'mailto:vanessalaiyz.work@u.nus.edu'
                 }
             ]
         }

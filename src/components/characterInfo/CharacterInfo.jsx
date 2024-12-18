@@ -4,9 +4,9 @@ import Mechhub from '../../assets/Images/MechHub/MechHub_preview.png';
 import getItDone from '../../assets/Images/GetItDone/GetItDone.png';
 import ultimateTTT from '../../assets/Images/UltimateTTT/UltimateTTT.png';
 import { FaAngleRight } from "react-icons/fa";
-import './Screen.css';
+import './CharacterInfo.css';
 
-export default function Screen({ hero }) {
+export default function CharacterInfo({ hero }) {
     const heroes = [
         {
             heroClass: 'About',
@@ -17,7 +17,7 @@ export default function Screen({ hero }) {
             skills: ['Python', 'SQL', 'HTML', 'CSS', 'JavaScript', 'R'],
             description: [
                 'Vanessa is a Year 2 Business Analytics Student at the National University of Singapore who loves cats, mechanical keyboards and grandma-esque activities.',
-                'Despite this being a game themed site Vanessa has not touched any pc or console games in about 2 years with the exception of Minecraft.'
+                'She recently had a relapse of her gaming addiction and is starting to dabble in First Person Shooters (FPS) games such as Overwatch 2, Valorant and Apex. We pray for her quick recovery'
             ],
             image: Vanesssa,
             play: ''

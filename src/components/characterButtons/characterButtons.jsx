@@ -6,7 +6,7 @@ import githubLogo  from '../../assets/Images/Character/githubLogo.png';
 import linkedinLogo from '../../assets/Images/Character/linkedinLogo.png';
 import gmailLogo from '../../assets/Images/Character/gmailLogo.png';
 import ultiTTTLogo from '../../assets/Images/Character/ultiTTTLogo.png';
-import './characterButtons.css';
+import './CharacterButtons.css';
 
 export default function CharacterButtons({ onHeroSelect }) {
     const heroes = [
@@ -56,7 +56,7 @@ export default function CharacterButtons({ onHeroSelect }) {
                 {
                     name: 'Email',
                     logo: gmailLogo,
-                    link: 'mailto:vanessa_lai@u.nus.edu'
+                    link: 'mailto:vanessalaiyz.work@gmail.com'
                 }
             ]
         }

@@ -7,11 +7,15 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    height: 100dvh;
+    height: -webkit-fill-available;
 }
 
 .main-content {
     flex: 1;
-    overflow: hidden;
+    overflow: auto;
     padding-top: calc(0.5rem * 2 + 0.75rem);
     padding-bottom: 2rem;
+    max-height: calc(100dvh - 4rem);
 }
+

@@ -7,6 +7,10 @@
     z-index: 1;
 }
 
+.chrInfo {
+    padding: 0 1rem;
+}
+
 .heroScreen {
     height: fit-content;
 }

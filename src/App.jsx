@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import MechHub from './pages/Projects/MechHub/MechHub';
 // import GetItDone from './pages/Projects/GetItDone/GetItDone';
 // import UltimateTTT from './pages/Projects/UltimateTTT/UltimateTTT';
-import New from './pages/New/New';
+import MainView from './pages/mainView/MainView';
 import OrientationLock from './pages/OrientationLock/OrientationLock';
 import './App.css'
 
@@ -19,7 +19,7 @@ function App() {
                 <Route path='/mechhub' element={<MechHub />} />
                 <Route path='/getitdone' element={<GetItDone />} />
                 <Route path='/ultimatettt' element={<UltimateTTT />}/> */}
-                <Route path='/' element={<New />}/>
+                <Route path='/' element={<MainView />}/>
                 </Routes>
             </OrientationLock>
         </Router>

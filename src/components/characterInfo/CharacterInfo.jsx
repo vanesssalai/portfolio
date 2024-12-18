@@ -4,9 +4,9 @@ import Mechhub from '../../assets/Images/MechHub/MechHub_preview.png';
 import getItDone from '../../assets/Images/GetItDone/GetItDone.png';
 import ultimateTTT from '../../assets/Images/UltimateTTT/UltimateTTT.png';
 import { FaAngleRight } from "react-icons/fa";
-import './Screen.css';
+import './characterInfo.css';
 
-export default function Screen({ hero }) {
+export default function CharacterInfo({ hero }) {
     const heroes = [
         {
             heroClass: 'About',

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { FaCheck } from 'react-icons/fa';
-import Screen from '../Screen/Screen';
-import CharacterButtons from '../characterButtons/characterButtons';
-import LandingBackground from './landingBackground';
-import './landingScreen.css';
+import CharacterInfo from '../characterInfo/CharacterInfo';
+import CharacterButtons from '../characterButtons/CharacterButtons';
+import LandingBackground from '../landingBackground/LandingBackground';
+import './ViewControl.css';
 
-export default function LandingScreen() {
+export default function ViewControl() {
     const [showConfirm, setShowConfirm] = useState(false);
     const [gameStarted, setGameStarted] = useState(false);
     const [playerNumbers, setPlayerNumbers] = useState(0);
@@ -39,9 +39,9 @@ export default function LandingScreen() {
     if (gameStarted) {
         console.log('game has started');
         return (
-            <div className="newPage">
-                <div className='heroScreen'>
-                    <Screen hero={selectedHero} />
+            <div className="heroScreen">
+                <div className='characterInfo'>
+                    <CharacterInfo hero={selectedHero} />
                 </div>
                 <CharacterButtons onHeroSelect={handleHeroSelect} />
             </div>

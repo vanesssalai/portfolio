@@ -8,6 +8,10 @@
 }
 
 .heroScreen {
+    padding: 0 1rem;
+}
+
+.characterInfo {
     height: fit-content;
 }
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Ping from 'ping.js';
-import './header.css';
+import './Header.css';
 
 export default function Header() {
     const [ping, setPing] = useState(null);

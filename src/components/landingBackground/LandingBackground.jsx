@@ -1,6 +1,6 @@
 import React from "react";
 import { FaLock } from "react-icons/fa";
-import './landingBackground.css';
+import './LandingBackground.css';
 
 export default function LandingBackground({ isBlurred }) {
     return (
